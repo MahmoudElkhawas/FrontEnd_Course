@@ -1,4 +1,21 @@
 h1{
-   color: red;
-
+   margin: auto;
+  width: fit-content;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+#about p{
+   color: purple;
+   line-height: 30px;
+}
+.my-button{
+   padding: 5px;
+   background-color: red;
+   border: none;
+}
+.my-button:hover{
+   background-color: brown;
 }
