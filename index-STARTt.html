@@ -65,9 +65,13 @@ console.log(totalYears);
 console.log(ordered);
     // 6. sort Exercise
     // Sort the people alphabetically by last name
-    const alpha = people.sort((a, b)) =>
-
-console.log(alpha);
+    const sortedpeople = people.sort((a ,b) => {
+      const [aLast] = a.split(', '); 
+      const [bLast] = b.split(', ');  
+  if (aLast > bLast) return 1;
+  if (aLast < bLast) return -1;
+  return 0;
+    });
   </script>
 </body>
 </html>
