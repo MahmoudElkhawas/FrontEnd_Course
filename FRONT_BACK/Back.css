@@ -1,0 +1,91 @@
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    border: none ;
+    width: 400px;
+    height: 150px;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 10px;
+    
+}
+
+.header-box {
+    background-color: rgb(255, 245, 232);
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #0083b0, #00b4db);
+}
+
+.griid {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.bord {
+    background: rgb(224, 224, 224);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    
+    
+}
+
+.bord:hover {
+    transform: translateY(-5px);
+}
+
+.bord.show {
+    display: flex;
+}
+
+.text {
+    padding: 10px;
+}
+
+.text h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.text p {
+    font-size: 13px;
+    color: #666;
+}
+
+.text strong {
+    color: green;
+    font-size: 14px;
+}
