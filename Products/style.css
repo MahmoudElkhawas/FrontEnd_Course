@@ -8,7 +8,7 @@ body {
 .container {
     border: none ;
     width: 400px;
-    height: 150px;
+    height: 100px;
     background-color: #ece9da;
     text-align: center;
     padding: 30px;
@@ -42,11 +42,10 @@ button:hover {
 
 .griid {
     display: grid;
-    grid-template-columns: repeat(4, 220px);
-    gap: 20px;
+    grid-template-columns: repeat(5, 220px);
+    gap: 50px;
     justify-content: center;
     padding: 20px;
-    gap: 50px;
 }
 
 .bord {
@@ -63,7 +62,7 @@ button:hover {
 }
 
 .bord:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .bord.show {

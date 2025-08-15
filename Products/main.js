@@ -1,8 +1,7 @@
 async function basicfetch() {
     const allCards = document.querySelectorAll(".bord");
     const allTexts = document.querySelectorAll(".bord .text");
-
-    // مسح البيانات القديمة
+        
     allTexts.forEach(card => card.innerHTML = "");
 
     try {
@@ -15,7 +14,7 @@ async function basicfetch() {
 
             allTexts[index].innerHTML = `
                 <img src="${product.thumbnail}" alt="${product.title}" 
-                    style="width:100%; height:150px; object-fit:cover;">
+                    style="width:100%; height:200px; object-fit:cover;">
                 <h3>${product.title}</h3>
                 <p>${product.description.substring(0,60)}...</p>
                 <strong>$${product.price}</strong>
