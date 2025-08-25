@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 .container-xl{
     max-width: 1140px;
-    padding-left: 100px;
+    padding-left: 40px;
 }
 .nav{
     display: flex;
@@ -22,18 +22,28 @@ h1, h2, h3 {
     align-items: center;          
     justify-content: center;
     padding: 20px;
-    width: 60%;
+    width: 70%;
+    
 }
 .link{
     display: flex;
     gap: 20px;
     padding: 20px;
+    margin-left: auto;
+}
+.fa:hover{
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transform: translateY(2px);
+    transition: all 0.3s ease-out;
+
 }
 .nav a {
     text-decoration: none;   
     color: inherit;          
     font-weight: 500;       
-    margin: 0 5px;       
+    margin: 0 0px;
+    
 }
 
 .nav a:hover {
@@ -149,6 +159,7 @@ h1, h2, h3 {
 .info{
     padding-left: 50px;
     padding-bottom: 100px;
+    padding-top: 30px;
 }
 .rounded-circle{
     width: 400px;
