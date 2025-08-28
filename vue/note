@@ -1,0 +1,92 @@
+Vue.js Lab: Product List with Cart
+Objective
+
+Practice Vue directives: v-if, v-else-if, v-else, v-show.
+
+Work with different data types: string, number, boolean, array, object.
+
+Learn event handling with @click.
+
+Apply dynamic classes and data binding.
+
+Requirements
+                                                               1. Navbar
+
+Create a responsive navbar using Bootstrap.
+
+Display the cart count dynamically using {{ cartCount }}.
+
+                                                               2. Data
+
+Create a products array containing product objects with:
+
+id → Number
+
+name → String
+
+price → Number
+
+inStock → Boolean
+
+Other data properties:
+
+cartCount → Number (default 0)
+
+showProducts → Boolean (default true)
+
+discount → Number (e.g., 10)
+
+                                                                3. Directives
+
+v-if / v-else-if / v-else → show stock status:
+
+Green text → In Stock
+
+Yellow text → Limited Stock (price < 50)
+
+Red text → Out of Stock
+
+v-show → toggle the visibility of the product list.
+
+                                                                 4. Event Handling
+
+Use @click on the Add to Cart button to:
+
+Increase cartCount by 1.
+
+Show an alert with the product name added.
+
+                                                             5. Dynamic Class
+
+Grey out the product name if the product is out of stock.
+
+6. Discount Message
+
+Show a discount message only if discount > 0 using v-if.
+
+7. Layout
+
+Use Bootstrap grid to display products in 3 columns on larger screens.
+
+Each product card should display:
+
+Image
+
+Name
+
+Price
+
+Stock status
+
+Description
+
+Add to Cart button
+-----------------------------------------------------------------------------------------------------------
+
+8. Extra Challenge (Optional)
+
+Calculate the total price of items in the cart.
+
+Allow removing products from the cart dynamically.
+
+Show a “No products available” message if the products array is empty.
