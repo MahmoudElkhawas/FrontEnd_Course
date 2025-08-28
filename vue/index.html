@@ -10,8 +10,7 @@
 </head>
 <body>
   <div id="app">
-    <!-- ============ NAVBAR ============ -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">MyShop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -25,7 +24,6 @@
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
           </ul>
-          <!-- Dynamic Cart Count -->
           <span class="navbar-text">
             🛒 Cart: <span class="badge bg-danger">{{ cartCount }}</span>
           </span>
@@ -34,23 +32,19 @@
     </nav>
 
     <div class="container my-4">
-      <!-- Toggle Product List -->
       <button class="btn btn-secondary mb-3" @click="showProducts = !showProducts">
         {{ showProducts ? "Hide" : "Show" }} Products
       </button>
 
-      <!-- No products available -->
       <div v-if="products.length === 0" class="alert alert-warning">
         No products available
       </div>
 
-      <!-- Product List -->
       <div v-show="showProducts" class="row">
         <div v-for="product in products" :key="product.id" class="col-md-4 mb-4">
           <div class="card h-100">
             <img :src="product.image" class="card-img-top" alt="Product Image">
             <div class="card-body">
-              <!-- Grey out if out of stock -->
               <h5 :class="{ 'text-muted': !product.inStock }">
                 {{ product.name }}
               </h5>
@@ -60,19 +54,16 @@
                 <strong>${{ discountedPrice(product) }}</strong>
               </p>
 
-              <!-- Discount message -->
               <p v-if="product.discount > 0" class="text-success">
                 {{ product.discount }}% OFF!
               </p>
 
-              <!-- Stock status with v-if / v-else-if / v-else -->
               <p v-if="product.inStock" class="text-success">In Stock</p>
               <p v-else-if="product.price < 50" class="text-warning">Limited Stock</p>
               <p v-else class="text-danger">Out of Stock</p>
 
               <p>{{ product.description }}</p>
 
-              <!-- Add to Cart -->
               <button class="btn btn-primary"
                       :disabled="!product.inStock"
                       @click="addToCart(product)">
@@ -83,7 +74,6 @@
         </div>
       </div>
 
-      <!-- Extra Challenge: Total -->
       <div v-if="cartCount > 0" class="alert alert-info mt-4">
         🛒 Total Price: ${{ totalPrice }}
       </div>
